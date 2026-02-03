@@ -291,30 +291,40 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 14px;
+    padding: 10px 16px;
     background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: var(--radius-sm);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius-md);
     color: var(--white);
     cursor: pointer;
     font-family: var(--font-primary);
     font-size: 0.875rem;
     font-weight: 600;
     transition: var(--transition);
+    backdrop-filter: blur(10px);
 }
 
 .lang-current:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .header.scrolled .lang-current {
-    background: rgba(37, 99, 235, 0.1);
-    border-color: var(--gray-300);
-    color: var(--dark);
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
 }
 
 .header.scrolled .lang-current:hover {
-    background: rgba(37, 99, 235, 0.15);
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    box-shadow: var(--shadow-glow);
+}
+
+.lang-icon {
+    font-size: 1.1rem;
 }
 
 .lang-current-flag {
@@ -322,12 +332,12 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     line-height: 1;
 }
 
-.lang-current i {
+.lang-arrow {
     font-size: 0.65rem;
     transition: var(--transition);
 }
 
-.lang-selector.open .lang-current i {
+.lang-selector.open .lang-arrow {
     transform: rotate(180deg);
 }
 
