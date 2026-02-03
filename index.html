@@ -582,11 +582,7 @@
                         <h3 data-i18n="formTitle">Inscreva-se Agora</h3>
                         <p data-i18n="formSubtitle">Preencha o formulário e entraremos em contato em até 24 horas.</p>
                     </div>
-                    <form action="https://formsubmit.co/galaxyinfomkt@gmail.com" method="POST" class="contact-form">
-                        <input type="hidden" name="_next" value="https://iasistema.vercel.app/thank-you.html">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="Nova inscrição - IA na Prática">
-                        <input type="hidden" name="_cc" value="info@galaxyinfo.us">
+                    <form id="ghl-form" class="contact-form">
                         <div class="form-group">
                             <label for="name" data-i18n="formName">Nome Completo</label>
                             <div class="input-icon">
@@ -721,6 +717,35 @@
 
         document.querySelectorAll('.feature-card, .session-card, .pricing-card, .testimonial-card').forEach(el => {
             observer.observe(el);
+        });
+
+        // GHL Webhook Form Submission
+        document.getElementById('ghl-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('.form-submit');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Enviando...</span>';
+            btn.disabled = true;
+
+            const data = {
+                full_name: this.querySelector('#name').value,
+                email: this.querySelector('#email').value,
+                phone: this.querySelector('#phone').value,
+                plan: this.querySelector('#plan').value,
+                message: this.querySelector('#message').value
+            };
+
+            fetch('https://services.leadconnectorhq.com/hooks/tWzBRN7PyEmmMAf5C3hv/webhook-trigger/ecc6e198-7d68-4b25-964d-7b9ef71d4269', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                window.location.href = '/thank-you.html';
+            })
+            .catch(() => {
+                window.location.href = '/thank-you.html';
+            });
         });
     </script>
 </body>
