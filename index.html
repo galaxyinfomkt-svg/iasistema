@@ -45,12 +45,33 @@
                 <span>Galaxy IT</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#programa">Programa</a></li>
-                <li><a href="#sessoes">Sessões</a></li>
-                <li><a href="#preco">Preço</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#programa" data-i18n="navPrograma">Programa</a></li>
+                <li><a href="#sessoes" data-i18n="navSessoes">Sessões</a></li>
+                <li><a href="#preco" data-i18n="navPreco">Preço</a></li>
+                <li><a href="#contato" data-i18n="navContato">Contato</a></li>
             </ul>
-            <a href="#contato" class="nav-cta">Inscreva-se</a>
+            <div class="lang-selector">
+                <button class="lang-current" aria-label="Select language">
+                    <span class="lang-current-flag">🇧🇷</span>
+                    <span class="lang-current-label">PT</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <button class="lang-option active" data-lang="pt">
+                        <span class="lang-flag">🇧🇷</span>
+                        <span>Português</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="es">
+                        <span class="lang-flag">🇪🇸</span>
+                        <span>Español</span>
+                    </button>
+                </div>
+            </div>
+            <a href="#contato" class="nav-cta" data-i18n="navCta">Inscreva-se</a>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -68,33 +89,33 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-robot"></i>
-                NOVO CURSO 2026
+                <span data-i18n="heroBadge">NOVO CURSO 2026</span>
             </div>
-            <h1>IA na Prática<br><span class="gradient-text">8 Habilidades para o Adulto Digital</span></h1>
-            <p class="hero-subtitle">Aprenda a usar Inteligência Artificial no dia a dia de forma
+            <h1><span data-i18n="heroTitle">IA na Prática</span><br><span class="gradient-text" data-i18n="heroTitleSpan">8 Habilidades para o Adulto Digital</span></h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Aprenda a usar Inteligência Artificial no dia a dia de forma
                 prática.<br>Treinamento 100% Online • Ao Vivo • 6 Sessões de 2 Horas</p>
             <div class="hero-cta">
                 <a href="#preco" class="btn btn-primary">
                     <i class="fas fa-star"></i>
-                    Ver Programa
+                    <span data-i18n="heroBtn1">Ver Programa</span>
                 </a>
                 <a href="#programa" class="btn btn-secondary">
                     <i class="fas fa-play-circle"></i>
-                    Saiba Mais
+                    <span data-i18n="heroBtn2">Saiba Mais</span>
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number">6</span>
-                    <span class="stat-label">Sessões</span>
+                    <span class="stat-label" data-i18n="statSessoes">Sessões</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">12</span>
-                    <span class="stat-label">Horas Totais</span>
+                    <span class="stat-label" data-i18n="statHoras">Horas Totais</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Prático</span>
+                    <span class="stat-label" data-i18n="statPratico">Prático</span>
                 </div>
             </div>
         </div>
@@ -105,11 +126,11 @@
             </div>
             <div class="floating-card card-2">
                 <i class="fas fa-certificate"></i>
-                <span>Certificado</span>
+                <span data-i18n="floatCertificado">Certificado</span>
             </div>
             <div class="floating-card card-3">
                 <i class="fas fa-video"></i>
-                <span>Zoom Ao Vivo</span>
+                <span data-i18n="floatZoom">Zoom Ao Vivo</span>
             </div>
         </div>
     </section>
@@ -117,7 +138,7 @@
     <!-- Announcement Bar -->
     <section class="announcement">
         <div class="container">
-            <p><i class="fas fa-award"></i> PARA ADULTOS 40+ • LINGUAGEM ACESSÍVEL • SEM TERMOS COMPLICADOS</p>
+            <p><i class="fas fa-award"></i> <span data-i18n="announcement">PARA ADULTOS 40+ • LINGUAGEM ACESSÍVEL • SEM TERMOS COMPLICADOS</span></p>
         </div>
     </section>
 
@@ -125,9 +146,9 @@
     <section id="programa" class="program">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Como Funciona</span>
-                <h2>Treinamento Prático de IA para o Dia a Dia</h2>
-                <p>Aprenda Inteligência Artificial de forma simples, prática e sem complicação.</p>
+                <span class="section-tag" data-i18n="programTag">Como Funciona</span>
+                <h2 data-i18n="programTitle">Treinamento Prático de IA para o Dia a Dia</h2>
+                <p data-i18n="programDesc">Aprenda Inteligência Artificial de forma simples, prática e sem complicação.</p>
             </div>
 
             <div class="features-grid">
@@ -135,29 +156,29 @@
                     <div class="feature-icon">
                         <i class="fas fa-video"></i>
                     </div>
-                    <h3>Aula Ao Vivo pelo Zoom</h3>
-                    <p>Assista às aulas ao vivo com interação em tempo real. Gravações disponíveis no YouTube.</p>
+                    <h3 data-i18n="feat1Title">Aula Ao Vivo pelo Zoom</h3>
+                    <p data-i18n="feat1Desc">Assista às aulas ao vivo com interação em tempo real. Gravações disponíveis no YouTube.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-file-pdf"></i>
                     </div>
-                    <h3>Apostila em PDF</h3>
-                    <p>Material completo para cada sessão com passo a passo ilustrado.</p>
+                    <h3 data-i18n="feat2Title">Apostila em PDF</h3>
+                    <p data-i18n="feat2Desc">Material completo para cada sessão com passo a passo ilustrado.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-hands"></i>
                     </div>
-                    <h3>Exercícios Práticos</h3>
-                    <p>Pratique durante a aula com exercícios guiados passo a passo.</p>
+                    <h3 data-i18n="feat3Title">Exercícios Práticos</h3>
+                    <p data-i18n="feat3Desc">Pratique durante a aula com exercícios guiados passo a passo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
-                    <h3>Certificado de Conclusão</h3>
-                    <p>Receba seu certificado ao completar todas as sessões do curso.</p>
+                    <h3 data-i18n="feat4Title">Certificado de Conclusão</h3>
+                    <p data-i18n="feat4Desc">Receba seu certificado ao completar todas as sessões do curso.</p>
                 </div>
             </div>
         </div>
@@ -167,22 +188,22 @@
     <section id="sessoes" class="sessions">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Currículo</span>
-                <h2>6 Sessões para Dominar a IA</h2>
-                <p>Cada sessão de 2 horas constrói sobre a anterior, criando uma jornada completa de aprendizado.</p>
+                <span class="section-tag" data-i18n="sessionsTag">Currículo</span>
+                <h2 data-i18n="sessionsTitle">6 Sessões para Dominar a IA</h2>
+                <p data-i18n="sessionsDesc">Cada sessão de 2 horas constrói sobre a anterior, criando uma jornada completa de aprendizado.</p>
             </div>
 
             <div class="sessions-timeline">
                 <div class="session-card">
                     <div class="session-number">01</div>
                     <div class="session-content">
-                        <h3>Primeiro Contato com IA</h3>
-                        <p>ChatGPT como Assistente Pessoal</p>
+                        <h3 data-i18n="s1Title">Primeiro Contato com IA</h3>
+                        <p data-i18n="s1Subtitle">ChatGPT como Assistente Pessoal</p>
                         <ul>
-                            <li>O que é Inteligência Artificial</li>
-                            <li>Primeiro acesso ao ChatGPT</li>
-                            <li>Fazendo sua primeira pergunta</li>
-                            <li>Exercício: conversa real com IA</li>
+                            <li data-i18n="s1Li1">O que é Inteligência Artificial</li>
+                            <li data-i18n="s1Li2">Primeiro acesso ao ChatGPT</li>
+                            <li data-i18n="s1Li3">Fazendo sua primeira pergunta</li>
+                            <li data-i18n="s1Li4">Exercício: conversa real com IA</li>
                         </ul>
                     </div>
                 </div>
@@ -190,13 +211,13 @@
                 <div class="session-card">
                     <div class="session-number">02</div>
                     <div class="session-content">
-                        <h3>Escrevendo Bem com IA</h3>
-                        <p>Textos, E-mails e Mensagens</p>
+                        <h3 data-i18n="s2Title">Escrevendo Bem com IA</h3>
+                        <p data-i18n="s2Subtitle">Textos, E-mails e Mensagens</p>
                         <ul>
-                            <li>Pedir para a IA escrever textos</li>
-                            <li>E-mails formais e informais</li>
-                            <li>Mensagens de WhatsApp</li>
-                            <li>Revisar e melhorar seus textos</li>
+                            <li data-i18n="s2Li1">Pedir para a IA escrever textos</li>
+                            <li data-i18n="s2Li2">E-mails formais e informais</li>
+                            <li data-i18n="s2Li3">Mensagens de WhatsApp</li>
+                            <li data-i18n="s2Li4">Revisar e melhorar seus textos</li>
                         </ul>
                     </div>
                 </div>
@@ -204,13 +225,13 @@
                 <div class="session-card">
                     <div class="session-number">03</div>
                     <div class="session-content">
-                        <h3>Viagens e Eventos</h3>
-                        <p>Planejando com Ajuda da IA</p>
+                        <h3 data-i18n="s3Title">Viagens e Eventos</h3>
+                        <p data-i18n="s3Subtitle">Planejando com Ajuda da IA</p>
                         <ul>
-                            <li>Planejar viagens passo a passo</li>
-                            <li>Organizar festas e eventos</li>
-                            <li>Listas de compras e checklists</li>
-                            <li>Comparar preços e opções</li>
+                            <li data-i18n="s3Li1">Planejar viagens passo a passo</li>
+                            <li data-i18n="s3Li2">Organizar festas e eventos</li>
+                            <li data-i18n="s3Li3">Listas de compras e checklists</li>
+                            <li data-i18n="s3Li4">Comparar preços e opções</li>
                         </ul>
                     </div>
                 </div>
@@ -218,13 +239,13 @@
                 <div class="session-card">
                     <div class="session-number">04</div>
                     <div class="session-content">
-                        <h3>Saúde e Bem-Estar</h3>
-                        <p>Cuidando de Você com Ajuda da IA</p>
+                        <h3 data-i18n="s4Title">Saúde e Bem-Estar</h3>
+                        <p data-i18n="s4Subtitle">Cuidando de Você com Ajuda da IA</p>
                         <ul>
-                            <li>Entender termos médicos</li>
-                            <li>Dicas de alimentação e exercícios</li>
-                            <li>Organizar medicamentos</li>
-                            <li>Limites: IA NÃO substitui médico</li>
+                            <li data-i18n="s4Li1">Entender termos médicos</li>
+                            <li data-i18n="s4Li2">Dicas de alimentação e exercícios</li>
+                            <li data-i18n="s4Li3">Organizar medicamentos</li>
+                            <li data-i18n="s4Li4">Limites: IA NÃO substitui médico</li>
                         </ul>
                     </div>
                 </div>
@@ -232,13 +253,13 @@
                 <div class="session-card">
                     <div class="session-number">05</div>
                     <div class="session-content">
-                        <h3>Finanças e Compras</h3>
-                        <p>Usando IA para Economizar</p>
+                        <h3 data-i18n="s5Title">Finanças e Compras</h3>
+                        <p data-i18n="s5Subtitle">Usando IA para Economizar</p>
                         <ul>
-                            <li>Organizar finanças pessoais</li>
-                            <li>Comparar preços de produtos</li>
-                            <li>Planejar compras inteligentes</li>
-                            <li>Entender contas e boletos</li>
+                            <li data-i18n="s5Li1">Organizar finanças pessoais</li>
+                            <li data-i18n="s5Li2">Comparar preços de produtos</li>
+                            <li data-i18n="s5Li3">Planejar compras inteligentes</li>
+                            <li data-i18n="s5Li4">Entender contas e boletos</li>
                         </ul>
                     </div>
                 </div>
@@ -246,13 +267,13 @@
                 <div class="session-card">
                     <div class="session-number">06</div>
                     <div class="session-content">
-                        <h3>Imagens e Vídeos com IA</h3>
-                        <p>Criando Conteúdo Visual</p>
+                        <h3 data-i18n="s6Title">Imagens e Vídeos com IA</h3>
+                        <p data-i18n="s6Subtitle">Criando Conteúdo Visual</p>
                         <ul>
-                            <li>Criar imagens com DALL-E</li>
-                            <li>Editar fotos com IA</li>
-                            <li>Criar vídeos curtos</li>
-                            <li>Thumbnails e posts para redes</li>
+                            <li data-i18n="s6Li1">Criar imagens com DALL-E</li>
+                            <li data-i18n="s6Li2">Editar fotos com IA</li>
+                            <li data-i18n="s6Li3">Criar vídeos curtos</li>
+                            <li data-i18n="s6Li4">Thumbnails e posts para redes</li>
                         </ul>
                     </div>
                 </div>
@@ -264,70 +285,70 @@
     <section id="preco" class="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Investimento</span>
-                <h2>Escolha seu Plano</h2>
-                <p>Opções flexíveis para seu aprendizado.</p>
+                <span class="section-tag" data-i18n="pricingTag">Investimento</span>
+                <h2 data-i18n="pricingTitle">Escolha seu Plano</h2>
+                <p data-i18n="pricingDesc">Opções flexíveis para seu aprendizado.</p>
             </div>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Essencial</h3>
-                    <p class="pricing-desc">Para iniciantes</p>
+                    <h3 data-i18n="plan1Name">Essencial</h3>
+                    <p class="pricing-desc" data-i18n="plan1Desc">Para iniciantes</p>
                     <div class="pricing-price">
                         <span class="price">$149</span>
                     </div>
                     <div class="pricing-details">
-                        <p><strong>3 Sessões × 2 Horas</strong></p>
+                        <p><strong data-i18n="plan1Details">3 Sessões × 2 Horas</strong></p>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Sessões 1-3 incluídas</li>
-                        <li><i class="fas fa-check"></i> ChatGPT e escrita com IA</li>
-                        <li><i class="fas fa-check"></i> Planejamento de viagens</li>
-                        <li><i class="fas fa-check"></i> Apostilas em PDF</li>
-                        <li><i class="fas fa-check"></i> Gravações no YouTube</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan1F1">Sessões 1-3 incluídas</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan1F2">ChatGPT e escrita com IA</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan1F3">Planejamento de viagens</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan1F4">Apostilas em PDF</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan1F5">Gravações no YouTube</span></li>
                     </ul>
-                    <a href="#contato" class="btn btn-outline">Começar</a>
+                    <a href="#contato" class="btn btn-outline" data-i18n="plan1Btn">Começar</a>
                 </div>
 
                 <div class="pricing-card featured">
-                    <div class="popular-badge">Mais Popular</div>
-                    <h3>Completo</h3>
-                    <p class="pricing-desc">Programa completo</p>
+                    <div class="popular-badge" data-i18n="popularBadge">Mais Popular</div>
+                    <h3 data-i18n="plan2Name">Completo</h3>
+                    <p class="pricing-desc" data-i18n="plan2Desc">Programa completo</p>
                     <div class="pricing-price">
                         <span class="price">$249</span>
                     </div>
                     <div class="pricing-details">
-                        <p><strong>6 Sessões × 2 Horas</strong></p>
+                        <p><strong data-i18n="plan2Details">6 Sessões × 2 Horas</strong></p>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Todas as 6 sessões</li>
-                        <li><i class="fas fa-check"></i> Currículo completo</li>
-                        <li><i class="fas fa-check"></i> Imagens e vídeos com IA</li>
-                        <li><i class="fas fa-check"></i> Suporte por e-mail</li>
-                        <li><i class="fas fa-check"></i> Certificado de conclusão</li>
-                        <li><i class="fas fa-check"></i> 1 sessão de revisão grátis</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F1">Todas as 6 sessões</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F2">Currículo completo</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F3">Imagens e vídeos com IA</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F4">Suporte por e-mail</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F5">Certificado de conclusão</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan2F6">1 sessão de revisão grátis</span></li>
                     </ul>
-                    <a href="#contato" class="btn btn-primary">Inscrever-se</a>
+                    <a href="#contato" class="btn btn-primary" data-i18n="plan2Btn">Inscrever-se</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Privado</h3>
-                    <p class="pricing-desc">Atenção individual</p>
+                    <h3 data-i18n="plan3Name">Privado</h3>
+                    <p class="pricing-desc" data-i18n="plan3Desc">Atenção individual</p>
                     <div class="pricing-price">
                         <span class="price">$449</span>
                     </div>
                     <div class="pricing-details">
-                        <p><strong>6 Sessões × 2 Horas</strong></p>
+                        <p><strong data-i18n="plan3Details">6 Sessões × 2 Horas</strong></p>
                     </div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Todas as 6 sessões</li>
-                        <li><i class="fas fa-check"></i> Treinamento 1 a 1</li>
-                        <li><i class="fas fa-check"></i> Currículo personalizado</li>
-                        <li><i class="fas fa-check"></i> Horário flexível</li>
-                        <li><i class="fas fa-check"></i> Suporte ilimitado</li>
-                        <li><i class="fas fa-check"></i> Certificado de conclusão</li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F1">Todas as 6 sessões</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F2">Treinamento 1 a 1</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F3">Currículo personalizado</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F4">Horário flexível</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F5">Suporte ilimitado</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="plan3F6">Certificado de conclusão</span></li>
                     </ul>
-                    <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                    <a href="#contato" class="btn btn-outline" data-i18n="plan3Btn">Fale Conosco</a>
                 </div>
             </div>
         </div>
@@ -337,8 +358,8 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Depoimentos</span>
-                <h2>O Que Nossos Alunos Dizem</h2>
+                <span class="section-tag" data-i18n="testimonialsTag">Depoimentos</span>
+                <h2 data-i18n="testimonialsTitle">O Que Nossos Alunos Dizem</h2>
             </div>
 
             <div class="testimonials-grid">
@@ -350,11 +371,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Tinha medo de tecnologia a vida toda. Depois de 6 sessões, estou usando ChatGPT para escrever
+                    <p data-i18n="test1Text">"Tinha medo de tecnologia a vida toda. Depois de 6 sessões, estou usando ChatGPT para escrever
                         e-mails e planejar viagens!"</p>
                     <div class="testimonial-author">
-                        <strong>Maria S.</strong>
-                        <span>Professora Aposentada</span>
+                        <strong data-i18n="test1Name">Maria S.</strong>
+                        <span data-i18n="test1Role">Professora Aposentada</span>
                     </div>
                 </div>
 
@@ -366,10 +387,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"A abordagem prática fez toda a diferença. Lembro o que aprendi porque pratiquei na hora!"</p>
+                    <p data-i18n="test2Text">"A abordagem prática fez toda a diferença. Lembro o que aprendi porque pratiquei na hora!"</p>
                     <div class="testimonial-author">
-                        <strong>Roberto K.</strong>
-                        <span>Empresário</span>
+                        <strong data-i18n="test2Name">Roberto K.</strong>
+                        <span data-i18n="test2Role">Empresário</span>
                     </div>
                 </div>
 
@@ -381,10 +402,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Instrutores pacientes, turma pequena e habilidades práticas. Exatamente o que eu precisava!"</p>
+                    <p data-i18n="test3Text">"Instrutores pacientes, turma pequena e habilidades práticas. Exatamente o que eu precisava!"</p>
                     <div class="testimonial-author">
-                        <strong>Susan L.</strong>
-                        <span>Profissional de Saúde</span>
+                        <strong data-i18n="test3Name">Susan L.</strong>
+                        <span data-i18n="test3Role">Profissional de Saúde</span>
                     </div>
                 </div>
             </div>
@@ -396,29 +417,29 @@
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <span class="section-tag">Comece Agora</span>
-                    <h2>Pronto para Começar sua Jornada?</h2>
-                    <p>Entre em contato hoje para se inscrever ou tirar dúvidas. Estamos aqui para ajudar você.</p>
+                    <span class="section-tag" data-i18n="contactTag">Comece Agora</span>
+                    <h2 data-i18n="contactTitle">Pronto para Começar sua Jornada?</h2>
+                    <p data-i18n="contactDesc">Entre em contato hoje para se inscrever ou tirar dúvidas. Estamos aqui para ajudar você.</p>
 
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <strong>E-mail</strong>
+                                <strong data-i18n="contactEmail">E-mail</strong>
                                 <a href="mailto:info@galaxyinfo.us">info@galaxyinfo.us</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-globe"></i>
                             <div>
-                                <strong>Website</strong>
+                                <strong data-i18n="contactWebsite">Website</strong>
                                 <a href="https://galaxyinfo.us">galaxyinfo.us</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <strong>Localização</strong>
+                                <strong data-i18n="contactLocation">Localização</strong>
                                 <span>Worcester, MA</span>
                             </div>
                         </div>
@@ -461,17 +482,17 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="logo.png" alt="Galaxy IT Logo">
-                    <p>Capacitando pessoas com habilidades tecnológicas desde 2020.</p>
+                    <p data-i18n="footerDesc">Capacitando pessoas com habilidades tecnológicas desde 2020.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#programa">Programa</a>
-                    <a href="#sessoes">Sessões</a>
-                    <a href="#preco">Preço</a>
-                    <a href="#contato">Contato</a>
+                    <a href="#programa" data-i18n="navPrograma">Programa</a>
+                    <a href="#sessoes" data-i18n="navSessoes">Sessões</a>
+                    <a href="#preco" data-i18n="navPreco">Preço</a>
+                    <a href="#contato" data-i18n="navContato">Contato</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Galaxy IT & Marketing. Todos os direitos reservados. | <a
+                <p>&copy; 2026 Galaxy IT & Marketing. <span data-i18n="footerRights">Todos os direitos reservados.</span> | <a
                         href="https://galaxyinfo.us">galaxyinfo.us</a> | Worcester, MA</p>
             </div>
         </div>
@@ -480,9 +501,10 @@
     <!-- Floating CTA -->
     <a href="#contato" class="floating-cta">
         <i class="fas fa-graduation-cap"></i>
-        Inscreva-se
+        <span data-i18n="floatingCta">Inscreva-se</span>
     </a>
 
+    <script src="translations.js"></script>
     <script>
         // Mobile menu toggle
         const mobileBtn = document.querySelector('.mobile-menu-btn');

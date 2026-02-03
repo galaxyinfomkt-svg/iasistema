@@ -282,6 +282,108 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     color: var(--primary);
 }
 
+/* Language Selector */
+.lang-selector {
+    position: relative;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-sm);
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.lang-current:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.header.scrolled .lang-current {
+    background: rgba(37, 99, 235, 0.1);
+    border-color: var(--gray-300);
+    color: var(--dark);
+}
+
+.header.scrolled .lang-current:hover {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+.lang-current-flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.lang-current i {
+    font-size: 0.65rem;
+    transition: var(--transition);
+}
+
+.lang-selector.open .lang-current i {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: var(--transition);
+    z-index: 1001;
+    min-width: 160px;
+}
+
+.lang-selector.open .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    transition: var(--transition);
+}
+
+.lang-option:hover {
+    background: var(--gray-100);
+    color: var(--primary);
+}
+
+.lang-option.active {
+    background: var(--primary-glow);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.lang-flag {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
 .nav-cta {
     padding: 12px 24px;
     background: var(--gradient-primary);
@@ -1084,6 +1186,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     .nav-links,
     .nav-cta {
         display: none;
+    }
+
+    .lang-selector {
+        margin-right: 8px;
     }
     
     .mobile-menu-btn {
