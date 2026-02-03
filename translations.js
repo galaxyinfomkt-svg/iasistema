@@ -137,6 +137,11 @@ const translations = {
         footerDesc: "Capacitando pessoas com habilidades tecnológicas desde 2020.",
         footerRights: "Todos os direitos reservados.",
 
+        // Form
+        formTitle: "Inscreva-se Agora",
+        formSubtitle: "Preencha o formulário e entraremos em contato em até 24 horas.",
+        formTrust: "Seus dados estão seguros conosco.",
+
         // Floating CTA
         floatingCta: "Inscreva-se",
 
@@ -284,6 +289,11 @@ const translations = {
         footerDesc: "Empowering people with technological skills since 2020.",
         footerRights: "All rights reserved.",
 
+        // Form
+        formTitle: "Sign Up Now",
+        formSubtitle: "Fill out the form and we'll get back to you within 24 hours.",
+        formTrust: "Your data is safe with us.",
+
         // Floating CTA
         floatingCta: "Sign Up",
 
@@ -430,6 +440,11 @@ const translations = {
         // Footer
         footerDesc: "Empoderando personas con habilidades tecnológicas desde 2020.",
         footerRights: "Todos los derechos reservados.",
+
+        // Form
+        formTitle: "Inscríbete Ahora",
+        formSubtitle: "Completa el formulario y te contactaremos en 24 horas.",
+        formTrust: "Tus datos están seguros con nosotros.",
 
         // Floating CTA
         floatingCta: "Inscríbete",
