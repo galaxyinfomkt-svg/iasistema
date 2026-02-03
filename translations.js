@@ -465,9 +465,10 @@ function setLanguage(lang) {
     const currentFlag = document.querySelector('.lang-current-flag');
     const currentLabel = document.querySelector('.lang-current-label');
     if (currentFlag) {
-        const flags = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
+        const flagCodes = { pt: 'br', en: 'us', es: 'es' };
         const labels = { pt: 'PT', en: 'EN', es: 'ES' };
-        currentFlag.textContent = flags[lang];
+        currentFlag.src = 'https://flagcdn.com/w40/' + flagCodes[lang] + '.png';
+        currentFlag.alt = labels[lang];
         if (currentLabel) currentLabel.textContent = labels[lang];
     }
 }

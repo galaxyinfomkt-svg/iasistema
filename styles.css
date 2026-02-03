@@ -323,13 +323,12 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     box-shadow: var(--shadow-glow);
 }
 
-.lang-icon {
-    font-size: 1.1rem;
-}
-
 .lang-current-flag {
-    font-size: 1.2rem;
-    line-height: 1;
+    width: 24px;
+    height: 18px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .lang-arrow {
@@ -390,8 +389,11 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .lang-flag {
-    font-size: 1.3rem;
-    line-height: 1;
+    width: 24px;
+    height: 18px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .nav-cta {
