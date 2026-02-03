@@ -141,6 +141,20 @@ const translations = {
         formTitle: "Inscreva-se Agora",
         formSubtitle: "Preencha o formulário e entraremos em contato em até 24 horas.",
         formTrust: "Seus dados estão seguros conosco.",
+        formName: "Nome Completo",
+        formNamePh: "Seu nome completo",
+        formEmail: "E-mail",
+        formEmailPh: "seu@email.com",
+        formPhone: "Telefone",
+        formPhonePh: "(000) 000-0000",
+        formPlan: "Plano de Interesse",
+        formPlanDefault: "Selecione um plano",
+        formPlanEssencial: "Essencial - $149",
+        formPlanCompleto: "Completo - $249",
+        formPlanPrivado: "Privado - $449",
+        formMessage: "Mensagem (opcional)",
+        formMessagePh: "Alguma dúvida ou comentário?",
+        formSubmit: "Enviar Inscrição",
 
         // Floating CTA
         floatingCta: "Inscreva-se",
@@ -293,6 +307,20 @@ const translations = {
         formTitle: "Sign Up Now",
         formSubtitle: "Fill out the form and we'll get back to you within 24 hours.",
         formTrust: "Your data is safe with us.",
+        formName: "Full Name",
+        formNamePh: "Your full name",
+        formEmail: "Email",
+        formEmailPh: "your@email.com",
+        formPhone: "Phone",
+        formPhonePh: "(000) 000-0000",
+        formPlan: "Plan of Interest",
+        formPlanDefault: "Select a plan",
+        formPlanEssencial: "Essential - $149",
+        formPlanCompleto: "Complete - $249",
+        formPlanPrivado: "Private - $449",
+        formMessage: "Message (optional)",
+        formMessagePh: "Any questions or comments?",
+        formSubmit: "Submit Registration",
 
         // Floating CTA
         floatingCta: "Sign Up",
@@ -445,6 +473,20 @@ const translations = {
         formTitle: "Inscríbete Ahora",
         formSubtitle: "Completa el formulario y te contactaremos en 24 horas.",
         formTrust: "Tus datos están seguros con nosotros.",
+        formName: "Nombre Completo",
+        formNamePh: "Tu nombre completo",
+        formEmail: "Correo Electrónico",
+        formEmailPh: "tu@correo.com",
+        formPhone: "Teléfono",
+        formPhonePh: "(000) 000-0000",
+        formPlan: "Plan de Interés",
+        formPlanDefault: "Selecciona un plan",
+        formPlanEssencial: "Esencial - $149",
+        formPlanCompleto: "Completo - $249",
+        formPlanPrivado: "Privado - $449",
+        formMessage: "Mensaje (opcional)",
+        formMessagePh: "¿Alguna pregunta o comentario?",
+        formSubmit: "Enviar Inscripción",
 
         // Floating CTA
         floatingCta: "Inscríbete",
@@ -463,11 +505,19 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                el.placeholder = translations[lang][key];
+            if (el.tagName === 'OPTION') {
+                el.textContent = translations[lang][key];
             } else {
                 el.innerHTML = translations[lang][key];
             }
+        }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
         }
     });
 
